@@ -1,6 +1,6 @@
 angular.module('googleExperiments').directive(
     'variation',
-    function(googleExperiments) {
+    ['googleExperiments', function(googleExperiments) {
         return function(scope, element, attr) {
             element.addClass('ng-cloak');
             scope.$watch(attr.variation, function googleExperimentsVariationWatchAction(value) {
@@ -14,5 +14,5 @@ angular.module('googleExperiments').directive(
                 });
             });
         };
-    }
+    }]
 );
