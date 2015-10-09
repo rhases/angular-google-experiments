@@ -5,7 +5,7 @@ angular.module('googleExperiments').provider(
             this.config = conf;
         };
 
-        this.$get = function($q, $timeout, angularLoad) {
+        this.$get = ['$q', '$timeout', 'angularLoad', function($q, $timeout, angularLoad) {
             var variationDeferred = $q.defer();
 
             angularLoad.loadScript('//www.google-analytics.com/cx/api.js?experiment=' + this.config.experimentId).then(function() {
@@ -19,6 +19,6 @@ angular.module('googleExperiments').provider(
                     return variationDeferred.promise;
                 }
             };
-        };
+        }];
     }]
 );
