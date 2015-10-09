@@ -17,8 +17,7 @@ angular.module('googleExperiments').directive(
             });
         };
     }]
-);
-;
+);;
 angular.module('googleExperiments').provider(
     'googleExperiments', [function googleExperimentsProvider() {
         var variation;
