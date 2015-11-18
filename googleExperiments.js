@@ -32,6 +32,7 @@ angular.module('googleExperiments').provider(
                 variationDeferred.resolve(cxApi.chooseVariation());
             }).catch(function() {
                 //error loading script
+                variationDeferred.resolve(0);
             });
 
             return {
