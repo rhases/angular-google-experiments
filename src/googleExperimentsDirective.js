@@ -1,6 +1,6 @@
 angular.module('googleExperiments').directive(
     'variation',
-    ['googleExperiments', function(googleExperiments) {
+    function(googleExperiments) {
         return {
             scope: {
                 variationSelected: '='
@@ -20,5 +20,5 @@ angular.module('googleExperiments').directive(
                 });
             }
         }
-    }]
+    }
 );
