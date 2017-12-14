@@ -1,6 +1,6 @@
 {
   "name": "rhases-angularjs-google-experiments",
-  "version": "1.2.0",
+  "version": "1.2.2",
   "homepage": "https://github.com/rhases/angular-google-experiments",
   "authors": [
     "Rudolf Olah <omouse@gmail.com>",
@@ -9,7 +9,7 @@
     "Gabriel Rodrigues <gabriesr@gmail.com>"
   ],
   "description": "Angular module that interfaces with Google Analytics Experiments, change your content dynamically.",
-  "main": "googleExperiments.min.js",
+  "main": "googleExperiments.js",
   "keywords": [
     "angular",
     "google",
