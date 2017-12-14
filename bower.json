@@ -1,6 +1,6 @@
 {
   "name": "rhases-angularjs-google-experiments",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "homepage": "https://github.com/rhases/angular-google-experiments",
   "authors": [
     "Rudolf Olah <omouse@gmail.com>",
@@ -26,7 +26,7 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "~1.6.17",
+    "angular": "~1.6.6",
     "angular-load": "^0.5.0"
   }
 }
