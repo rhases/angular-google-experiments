@@ -1,12 +1,15 @@
 {
-  "name": "angular-google-experiments",
-  "version": "1.0.1",
-  "homepage": "https://github.com/GoAugust/angular-google-experiments",
+  "name": "rhases-angularjs-google-experiments",
+  "version": "1.2.0",
+  "homepage": "https://github.com/rhases/angular-google-experiments",
   "authors": [
-    "Rudolf Olah <omouse@gmail.com>"
+    "Rudolf Olah <omouse@gmail.com>",
+    "Ade Olonoh",
+    "Bikramjit Singh",
+    "Gabriel Rodrigues <gabriesr@gmail.com>"
   ],
   "description": "Angular module that interfaces with Google Analytics Experiments, change your content dynamically.",
-  "main": "googleExperiments.js",
+  "main": "googleExperiments.min.js",
   "keywords": [
     "angular",
     "google",
@@ -23,7 +26,7 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "~1.3.15",
-    "angular-load": "eaguerralde/angular-load#~0.2.0"
+    "angular": "~1.6.17",
+    "angular-load": "^0.5.0"
   }
 }
