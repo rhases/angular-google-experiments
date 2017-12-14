@@ -1,13 +1,28 @@
 {
-  "name": "angular-google-experiments",
-  "version": "1.0.1",
+  "name": "rhases-angularjs-google-experiments",
+  "version": "1.2.0",
   "private": false,
-  "author": "Rudolf Olah <omouse@gmail.com>",
+  "main": "googleExperiments.min.js",  
+  "authors": [
+    "Rudolf Olah <omouse@gmail.com>",
+    "Ade Olonoh",
+    "Bikramjit Singh",
+    "Gabriel Rodrigues <gabriesr@gmail.com>"
+  ],
+  "scripts":{
+    "compile": "grunt",
+    "release": "standard-version"
+  },
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.4",
     "grunt-contrib-uglify": "~0.4.0",
-    "grunt-ng-annotate": "^0.9.2"
+    "grunt-ng-annotate": "^0.9.2",
+    "standard-version": "^3.0.0"
+  },
+  "peerDependencies": {
+    "angular": "~1.6.17",
+    "angular-load": "^0.5.0"
   }
 }

@@ -7,7 +7,7 @@ Angular module that interfaces with Google Analytics Experiments, change your co
 
 Install using bower:
 
-    bower install angular-google-experiments
+    bower install rhases-angularjs-google-experiments
 
 Include the code:
 

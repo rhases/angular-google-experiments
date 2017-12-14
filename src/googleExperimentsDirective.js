@@ -12,7 +12,7 @@ angular.module('googleExperiments').directive(
                         if (variation == value) {
                             element.removeClass('ng-cloak');
                             element.removeClass('ng-hide');
-                            scope.variationSelected = variation
+                            //scope.variationSelected = variation
                         } else {
                             element.addClass('ng-hide');
                         }
