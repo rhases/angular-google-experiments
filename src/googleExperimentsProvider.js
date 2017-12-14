@@ -5,13 +5,14 @@ angular.module('googleExperiments').provider(
             this.config = conf;
         };
 
-        this.$get = function($q, $timeout, angularLoad) {
+        this.$get = ['$q', '$timeout', 'angularLoad', function($q, $timeout, angularLoad) {
             var variationDeferred = $q.defer();
 
             angularLoad.loadScript('//www.google-analytics.com/cx/api.js?experiment=' + this.config.experimentId).then(function() {
                 variationDeferred.resolve(cxApi.chooseVariation());
             }).catch(function() {
                 //error loading script
+                variationDeferred.resolve(0);
             });
 
             return {
@@ -19,6 +20,6 @@ angular.module('googleExperiments').provider(
                     return variationDeferred.promise;
                 }
             };
-        };
+        }];
     }]
 );
