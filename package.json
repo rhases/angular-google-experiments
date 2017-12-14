@@ -1,6 +1,6 @@
 {
   "name": "rhases-angularjs-google-experiments",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "private": false,
   "main": "googleExperiments.min.js",
   "authors": [
